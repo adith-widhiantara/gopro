@@ -72,16 +72,69 @@
             </div>
           </div>
           <div class="col-9">
-            <form>
+            <form action="index.html" method="post">
+
               <div class="form-group">
                 <label for="namalengkap">Nama Lengkap</label>
-                <input type="text" class="form-control" id="namalengkap" placeholder="Aditya S. Widhiantara">
+                <input type="text" class="form-control" id="namalengkap" placeholder="Aditya S. Widhiantara" name="namalengkap">
               </div>
+
               <div class="form-group">
-                <label for="formGroupExampleInput2"></label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                <label for="tangallahir">Tanggal Lahir</label>
+                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" name="tangallahir"/>
+                  <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
               </div>
-              <button type="button" class="btn btn-warning text-white daftar">Daftar</button>
+
+              <div class="form-group">
+                <p>Jenis Kelamin</p>
+                <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="jeniskelamin" class="custom-control-input" value="Pria"><span class="custom-control-label">Pria</span>
+                </label>
+                <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="jeniskelamin" class="custom-control-input" value="Wanita"><span class="custom-control-label">Wanita</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="Status">Status</label>
+                <select id="Status" class="form-control">
+                  <option selected>Pilih status pernikahan</option>
+                  <option value="Belum Menikah">Belum Menikah</option>
+                  <option value="Sudah Menikah">Sudah Menikah</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" class="form-control" id="Username" placeholder="adithwidhiantara" name="Username">
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control email-inputmask" id="email-mask" placeholder="mail@example.com" name="email">
+              </div>
+
+              <div class="form-group">
+                <label>Nomor Kontak</label>
+                <input type="text" class="form-control phone-inputmask" id="phone-mask" placeholder="" name="kontak">
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="" name="password">
+              </div>
+
+              <div class="form-group">
+                <label>PIN</label>
+                <input type="text" class="form-control PIN-inputmask" id="PIN" placeholder="" name="PIN">
+              </div>
+
+              <button type="submit" class="btn btn-warning text-white daftar">Daftar</button>
+              <a href="#" class="btn btn-outline-warning daftar" style="margin-right: 10px;">Batal</a>
             </form>
           </div>
         </div>
@@ -90,4 +143,23 @@
   </div>
 </div>
 <!-- End Isian -->
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="text-md-right footer-links d-none d-sm-block">
+              <a href="javascript: void(0);">About</a>
+              <a href="javascript: void(0);">Support</a>
+              <a href="javascript: void(0);">Contact Us</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer -->
 @endsection
