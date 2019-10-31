@@ -72,7 +72,8 @@
             </div>
           </div>
           <div class="col-9">
-            <form action="index.html" method="post">
+            <form method="POST" action="{{ route('register') }}">
+              @csrf
 
               <div class="form-group">
                 <label for="namalengkap">Nama Lengkap</label>
@@ -80,9 +81,9 @@
               </div>
 
               <div class="form-group">
-                <label for="tangallahir">Tanggal Lahir</label>
+                <label for="tanggallahir">Tanggal Lahir</label>
                 <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" name="tangallahir"/>
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" name="tanggallahir"/>
                   <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                   </div>
@@ -101,8 +102,8 @@
 
               <div class="form-group">
                 <label for="Status">Status</label>
-                <select id="Status" class="form-control">
-                  <option selected>Pilih status pernikahan</option>
+                <select id="Status" class="form-control" name="status">
+                  <option value="" selected>Pilih status pernikahan</option>
                   <option value="Belum Menikah">Belum Menikah</option>
                   <option value="Sudah Menikah">Sudah Menikah</option>
                 </select>
@@ -110,7 +111,7 @@
 
               <div class="form-group">
                 <label for="Username">Username</label>
-                <input type="text" class="form-control" id="Username" placeholder="adithwidhiantara" name="Username">
+                <input type="text" class="form-control" id="Username" placeholder="adithwidhiantara" name="username">
               </div>
 
               <div class="form-group">
@@ -145,21 +146,14 @@
 <!-- End Isian -->
 
 <!-- Footer -->
-<div class="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-          Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
-      </div>
-      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-          <div class="text-md-right footer-links d-none d-sm-block">
-              <a href="javascript: void(0);">About</a>
-              <a href="javascript: void(0);">Support</a>
-              <a href="javascript: void(0);">Contact Us</a>
-          </div>
-      </div>
-    </div>
+<footer class="page-footer font-small blue bg-light">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <p class="quicksand">© 2019 Copyright | PPL</p>
   </div>
-</div>
+  <!-- Copyright -->
+
+</footer>
 <!-- End Footer -->
 @endsection
