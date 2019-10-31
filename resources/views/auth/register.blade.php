@@ -74,11 +74,11 @@
           <div class="col-9">
             <form>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="E.g : example@email.com">
+                <label for="namalengkap">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namalengkap" placeholder="Aditya S. Widhiantara">
               </div>
               <div class="form-group">
-                <label for="formGroupExampleInput2">Another label</label>
+                <label for="formGroupExampleInput2"></label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
               </div>
               <button type="button" class="btn btn-warning text-white daftar">Daftar</button>
